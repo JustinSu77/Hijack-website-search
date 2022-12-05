@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input form hijacking</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Search</legend>
+        <form action="https://amazon.com/s" autocomplete="off">
+
+            <section class = "amazon">
+                <label for="amazon">Search Amazon:</label>
+                <input type="text" id = "amazon" name = "k">
+                <button role = "submit"   formtarget="_blank" ">Search</button>
+            </section>
+        </form>
+    
+        <form action="https://google.com/search" autocomplete="off">
+            <section class = "google">
+                <label for="google">Search Google:</label>
+                <input type="text" id = "google" name = "q">
+                <button role = "submit"    formtarget="_blank">Search</button>
+            </section>
+        </form>
+        <form action="https://reddit.com/search" autocomplete="off"> 
+            <section class = "reddit">
+                <label for="reddit">Search Reddit:</label>
+                <input type="text" id = "reddit" name = "q">
+                <button role = "submit"   formtarget="_blank" >Search</button>
+            </section>
+             
+        </form>
+        <form action="https://youtube.com/results"  autocomplete="off"> 
+            <section class = "reddit">
+                <label for="reddit">Search Youtube:</label>
+                <input type="text" id = "youtube" name = "search_query">
+                <button role = "submit"  formtarget="_blank" >Search</button>
+            </section>
+             
+        </form>
+    </fieldset>
+    
+    
+</body>
+</html>
